@@ -75,5 +75,8 @@ var Greeter = React.createClass({
         );
     }
 });
+
+var firstName = 'Justin';
+var messageProp = 'You are signed in.'
 ReactDOM.render(
-    <Greeter/>, document.getElementById('app'));
+    <Greeter name={firstName} message={messageProp}/>, document.getElementById('app'));
